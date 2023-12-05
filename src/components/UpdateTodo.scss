@@ -1,0 +1,99 @@
+
+/* Todo info / heading*/
+.update{
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.copy {
+
+    border: 1px solid #dfceb1;
+    display: flex;
+    align-items: center;
+    padding: 50px 80px;
+    border-radius: 30px;
+    visibility: hidden;
+
+
+    .copy-bubble {
+        padding: 33px 30px;
+        border-radius: 50%;
+        background-color: #ff5631;
+        margin-left: 50px;
+        height: 100px;
+        width: 100px;
+        p {
+            font-size: 26px;
+            color: #0d0d0d;
+            font-weight: bold;
+        }
+    }
+    .copy-text {
+        p {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        }
+    }
+}
+.update-todo {
+    padding: 50px 80px;
+    display: flex;
+    input {
+        width: 300px;
+        padding: 5px;
+        background-color: #1e1e1e;
+        color: #777777;
+        border-radius: 10px;
+        border-bottom: none;
+        border-right: none;
+        transition: 0.5s;
+    }
+    button {
+        background-color: #ff5631;
+        color: #0d0d0d;
+        font-weight: bold;
+        border: none;
+        height: 50px;
+        padding-bottom: 5px;
+        margin-left: 30px;
+        width: 50px;
+        border-radius: 50%;
+        &:hover {
+            cursor: pointer;
+            background-color: #e66c50;
+        }
+        &:active {
+            box-shadow: 0 0 2px darkslategray;
+            transform: translateY(2px);
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .update{
+        width: 100%;
+    }
+
+    .copy{
+        margin: auto;
+        margin-left: 60px;
+    }
+    /*Input and add */
+    .update-todo {
+        padding: 50px 80px;
+        display: flex;
+        margin: auto;
+       
+        
+    }
+    input{
+        font-size: 23px;
+    }
+
+    
+}
