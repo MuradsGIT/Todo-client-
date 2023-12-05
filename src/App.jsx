@@ -9,7 +9,7 @@ import AuthContext from "./context/AuthContext";
 function App() {
  const {loggedIn} = useContext(AuthContext);
   return (
-    <BrowserRouter  basename="/Todo-client-/" >
+    <BrowserRouter>
       <Routes>
         {loggedIn ===false && <Route path="/" element={<Home />} />}
         {loggedIn === true && (
